@@ -16,14 +16,16 @@
 
 typedef struct
 {
-
-	int16_t Acc_x;
+    int16_t Acc_x;
     int16_t Acc_y;
     int16_t Acc_z;
     int16_t Gyro_x;
     int16_t Gyro_y;
     int16_t Gyro_z;
-
+    int16_t Q0;
+    int16_t Q1;
+    int16_t Q2;
+    int16_t Q3;
 } gy;
 
 
