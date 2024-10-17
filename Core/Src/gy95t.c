@@ -58,4 +58,20 @@ void gy95_All(gy* my_95Q)
     iic_read(GYRO_Z_L, &data_L, 1);
     iic_read(GYRO_Z_H, &data_H, 1);
     my_95Q->Gyro_z = (int16_t)((data_H << 8) | data_L);
+
+    iic_read(Q0_L, &data_L, 1);
+    iic_read(Q0_H, &data_H, 1);
+    my_95Q->Q0 = (int16_t)((data_H << 8) | data_L);
+
+    iic_read(Q1_L, &data_L, 1);
+    iic_read(Q1_H, &data_H, 1);
+    my_95Q->Q1 = (int16_t)((data_H << 8) | data_L);
+
+    iic_read(Q2_L, &data_L, 1);
+    iic_read(Q2_H, &data_H, 1);
+    my_95Q->Q2 = (int16_t)((data_H << 8) | data_L);
+
+   iic_read(Q3_L, &data_L, 1);
+   iic_read(Q3_H, &data_H, 1);
+   my_95Q->Q3 = (int16_t)((data_H << 8) | data_L);
 }
